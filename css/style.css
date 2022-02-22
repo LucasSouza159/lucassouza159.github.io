@@ -46,67 +46,67 @@ header h1 {
 .container-btn {
   width: 600px;
 }
-.btn-projetos,
-.btn-contato {
+.btn-project,
+.btn-contact {
   text-decoration: none;
   padding: 10px 40px;
   border-radius: 10px;
   margin-right: 50px;
 }
-.btn-projetos {
+.btn-project {
   background: crimson;
   border: 2px solid crimson;
   color: #0e091b;
   font-weight: bold;
 }
-.btn-contato {
+.btn-contact {
   background: #0e091b;
   border: 2px solid crimson;
   color: crimson;
   font-weight: bold;
 }
-.descricao {
+.description {
   padding: 200px 0 0 200px;
   width: 600px;
 }
-.descricao h1 {
+.description h1 {
   color: white;
   font-weight: normal;
   font-size: 40px;
 }
-.descricao span {
+.description span {
   font-weight: bold;
   font-size: 50px;
 }
-.descricao p {
+.description p {
   margin-bottom: 60px;
   font-size: 18px;
   color: rgb(180, 180, 180);
 }
-.container-descricao {
+.container-description {
   display: flex;
   justify-content: space-evenly;
 }
 /*Quem sou*/
-.container-quemsou {
+.container-who {
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
   height: 600px;
 }
-.quemsou {
+.who {
   width: 500px;
   margin-left: 80px;
 }
-.quemsou h2 {
+.who h2 {
   color: crimson;
   font-size: 60px;
   text-transform: uppercase;
 }
-.quemsou p {
+.who p {
   color: rgb(192, 192, 192);
 }
-.quemsou-img {
+.who-img {
   width: 650px;
 }
 /*Habilidades*/
@@ -182,19 +182,19 @@ header h1 {
 summary{
   list-style: none;
 }
-.container-projetos {
+.container-project {
   width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
 }
-.titulo-projeto {
+.title-project {
   color: crimson;
   font-size: 80px;
   margin-left: 50px;
   text-transform: uppercase;
 }
-.projeto-detalhes {
+.project-details {
   width: 400px;
   border-radius: 10px;
   padding: 20px;
@@ -225,29 +225,29 @@ summary{
   border-bottom: 3px solid #170f2c;
 }
 /*Formulario de contato*/
-.container-contato{
+.container-contact{
   display: flex;
-  justify-content:center;
+  justify-content:space-evenly;
   align-items: center;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   background: linear-gradient(to left, crimson, orange);
 }
-.contato{
+.contact{
 width: 500px;
 }
-.contato h1{
+.contact h1{
   font-size: 60px;
   color: crimson;
   text-transform: uppercase;
 }
-.contato p{
+.contact p{
   color: white;
   font-weight: 400;
 }
 /*Formylario*/
-.formulario{
+.form-form{
   width: 500px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -275,6 +275,7 @@ width: 500px;
 .btn{
   font-size: 30px;
   transition: .3s linear;
+  text-transform: uppercase;
 }
 .btn:hover{
   transition: .3s linear;

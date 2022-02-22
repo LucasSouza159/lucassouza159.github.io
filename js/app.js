@@ -1,18 +1,18 @@
 function gotowhatsapp() {
 
-    var nome = document.getElementById("nome").value;
-    var email = document.getElementById("email").value;
-    var vaga = document.getElementById("vaga").value;
-    var tipoVaga = document.getElementById("tipoVaga").value;
-    var area = document.getElementById("area").value;
+    var nameForm = document.getElementById("nameForm").value;
+    var emailForm = document.getElementById("emailForm").value;
+    var vagaForm = document.getElementById("vagaForm").value;
+    var tipoVagaForm = document.getElementById("tipoVagaForm").value;
+    var areaForm = document.getElementById("areaForm").value;
 
 
     var url = "https://wa.me/+5511985307427?text="
-        + "Nome: " + nome + "%0a"
-        + "Email: " + email + "%0a"
-        + "Modelo da vaga: " + vaga + "%0a"
-        + "Tipo da vaga: " + tipoVaga + "%0a"
-        + "Descrição da vaga: " + area;
+        + "Name: " + nameForm + "%0a"
+        + "Email: " + emailForm + "%0a"
+        + "Job model: " + vagaForm + "%0a"
+        + "Type of Job: " + tipoVagaForm + "%0a"
+        + "job description: " + areaForm;
 
     window.open(url, '_blank').focus();
 }
