@@ -225,12 +225,15 @@
         margin-bottom: 5px;
       }
       .skill{
-        width: 20%;
+        width: 27%;
         height: 30px;
         background: #0e091b;
         border-radius: 20px;
         margin: 50px 30px 0 30px;
       
+      }
+      .skill-html, .skill-css, .skill-flexbox, .skill-grid, .skill-js, .skill-jquery, .skill-photoshop, .skill-git{
+        font-size: 1rem;
       }
       /*!Projetos*/
       .container-projeto{
