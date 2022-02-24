@@ -134,6 +134,11 @@
     margin: 50px 30px;
   }
 }
+@media (max-width:450px){
+    #logo {
+        font-size: 2rem;
+      }
+}
   @media (max-width: 375px){
     #logo {
         font-size: 2rem;
