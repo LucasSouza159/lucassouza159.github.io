@@ -32,7 +32,7 @@ a:hover {
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background: #0e091b;
   box-shadow: 1px 15px 30px black;
 }
@@ -95,79 +95,203 @@ a:hover {
   color: crimson;
 }
 
-
-@media (max-width: 600px) {
-  #menu {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background: #0e091b;
-    transition: 0.6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-  #nav.active #menu {
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  #menu a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.212);
-  }
-  #btn-mobile {
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-  }
-  #hamburger {
-    border-top: 2px solid crimson;
-    width: 20px;
-  }
-  #hamburger::after,
-  #hamburger::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: crimson;
-    margin-top: 5px;
-    transition: 0.3s;
-    position: relative;
-  }
-  #nav.active #hamburger {
-    border-top-color: transparent;
-  }
-  #nav.active #hamburger::before {
-    transform: rotate(135deg);
-  }
-  #nav.active #hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
-
-  /*!Informações*/
-.container-info{
-  margin: 1.875rem;
-}
-.info-btn{
+/*!quem sou*/
+.container-who{
   display: flex;
   justify-content: space-evenly;
-  gap: 1rem;
-  margin-top: 1.875rem;
+  align-items: center;
+  margin: 100px 30px;
 }
+.who-img img{
+  width: 100%;
+}
+.who{
+  width: 450px;
+}
+.who h2{
+  font-size: 3.125rem;
+  color: crimson;
+  text-transform: uppercase;
+}
+.who p{
+  color: rgb(212, 212, 212);
+}
+/*Habilidades*/
+.container-skills{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content:flex-start;
+  gap: 0px 10px;
+  flex-wrap: wrap;
+  background: #1d113a;
+}
+.container-skills h1{
+  text-align: center;
+  width: 100%;
+  color: crimson;
+  font-weight: bold;
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  margin-bottom: -50px;
+}
+.skill{
+  width: 20%;
+  height: 30px;
+  background: #ccc;
+  border-radius: 20px;
+  margin: 100px 30px 0 30px;
+
+}
+.skill-html, .skill-css, .skill-flexbox, .skill-grid, .skill-js, .skill-jquery, .skill-photoshop, .skill-git{
+  background: linear-gradient(to left, crimson, orange);
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.skill-css{
+  width: 100%;
+}
+.skill-flexbox{
+  width: 90%;
+}
+.skill-grid{
+  width: 60%;
+}
+.skill-js{
+  width: 60%;
+}
+.skill-jquery{
+  width: 80%;
+}
+.skill-git{
+  width: 80%;
+}
+.skill-photoshop{
+  width: 100%;
 }
 
+/*!Projetos*/
+summary{
+  list-style: none;
+}
+.container-projeto{
+  margin: 0 auto;
+}
+.titulo-projeto{
+  color: crimson;
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.project-details{
+  width: 30%;
+  padding: 20px 100px;
+  background: #170f2c;
+  border-radius: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+  text-align: center;
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 10px 30px black;
+  transition: all .3s;
+}
+.project-details:hover{
+  width: 35%;
+  padding: 2rem;
+}
+.collapse {
+  display: flex;
+  flex-direction: column;
+}
+.collapse a {
+  text-decoration: none;
+  color: rgb(219, 219, 219);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  border-bottom: 3px solid #170f2c;
+}
 
+/*Formulario de contato*/
+.container-contact{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 100px auto -30px auto;
+  background: linear-gradient(to left, crimson, orange);
+}
+.contact{
+width: 34.7%;
+}
+.contact h1{
+  font-size: 3.75em;
+  color: crimson;
+  text-transform: uppercase;
+}
+.contact p{
+  color: white;
+  font-weight: 400;
+}
+/*Formulario*/
+.form-form{
+  width: 34.7%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form input,select,textarea{
+  background: transparent;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px 0;
+  color: #0e091b;
+  font-weight: 600;
+}
+.form input::placeholder, textarea::placeholder{
+  color: #0e091b;
+}
+.form select option{
+  font-weight: bold;
+  color: #0e091b;
+}
+.btn{
+  font-size: 1.875em;
+  transition: .3s linear;
+  text-transform: uppercase;
+}
+.btn:hover{
+  transition: .3s linear;
+  background: #0e091b;
+  color: crimson;
+  border: 4px solid crimson;
+  cursor: pointer;
+}
+
+/*Footer*/
+footer{
+  width: 100%;
+  background: linear-gradient(to left, #0e091b, #170f2c);
+  margin-bottom: -100px;
+}
+footer p{
+  color: crimson;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.875rem;
+  text-align: center;
+}
 
 
 

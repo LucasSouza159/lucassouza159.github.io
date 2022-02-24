@@ -1,0 +1,209 @@
+@media (max-width: 750px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #0e091b;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.212);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid crimson;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: crimson;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  
+    /*!Informações*/
+  .container-info{
+    margin: 1.875rem;
+  }
+  .info-btn{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 1.875rem;
+  }
+  /*!quem sou*/
+  .who{
+    width: 31.25rem;
+    margin-left: 1.875rem;
+  }
+  .who h2{
+    font-size: 2.5rem;
+  }
+  .container-projeto{
+    margin: 0 auto;
+  }
+  .titulo-projeto{
+    color: crimson;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  }
+  @media (max-width: 500px){
+   /*!Informações*/
+    .container-info{
+    flex-direction: column;
+  }
+  .info-img img{
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px black;
+    margin-top: 30px;
+  }
+  /*!quem sou*/
+  .container-who{
+    flex-direction: column;
+  }
+  .who-img img{
+    display: none;
+  }
+  .who{
+      width: 400px;
+  }
+  /*Habilidades*/
+  .container-skills{
+    height: 650px;
+  }
+  .skill{
+    width: 35%;
+  }
+  /*Formulario de contato*/
+  .container-contact{
+    flex-direction: column;
+  }
+  .contact{
+  width: 80%;
+  margin: 0 auto;
+  }
+  .contact h1{
+    text-align: center;
+  }
+  .contact p{
+    color: white;
+    font-weight: 400;
+    text-align: center;
+  }
+  /*Formulario*/
+  .form-form{
+    width: 80%;
+    margin: 50px 30px;
+  }
+}
+  @media (max-width: 375px){
+    #logo {
+        font-size: 2rem;
+      }
+    
+      /*!Informações*/
+      .info-desc h1{
+        font-size: 1.5rem;
+      }
+      .info-img img{
+        border-radius: 10px;
+        box-shadow: 0px 15px 30px black;
+        margin-top: 30px;
+      }
+      /*!quem sou*/
+      .container-who{
+        width: 100%;
+        margin: 0;
+      }
+      .who{
+        width: 80%;
+        margin: 30px;
+      }
+      .who h2{
+        font-size: 2rem;
+      }
+      .who p{
+        font-size: 14px;
+      }
+      /*Habilidades*/
+      .container-skills{
+        height: 450px;
+      }
+      .container-skills h1{
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
+      .skill{
+        width: 32%;
+        height: 30px;
+        background: #0e091b;
+        border-radius: 20px;
+        margin: 50px 30px 0 30px;
+      
+      }
+      /*!Projetos*/
+      .container-projeto{
+        margin: 0 auto;
+      }
+      .titulo-projeto{
+        font-size: 2rem;
+      }
+      
+      /*Formulario de contato*/
+      .container-contact{
+        flex-direction: column;
+      }
+      .contact{
+      width: 80%;
+      }
+      .contact h1{
+        font-size: 2em;
+      }
+      /*Formulario*/
+      .form-form{
+        width: 80%;
+        margin: 50px 0;
+      }
+      /*Footer*/
+      footer p{
+        font-size: 1rem;
+      }      
+  }

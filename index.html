@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="https://kit.fontawesome.com/b51da895f1.js" crossorigin="anonymous"></script>
     <title>Lucas Oliveira</title>
 </head>
@@ -42,18 +43,133 @@
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer>
+        <section>
+            <div class="container-who">
+                <div class="who-img">
+                    <img src="./images/mesa.png" alt="">
+                </div>
+                <div class="who">
+                    <h2>Who am I?</h2>
+                    <p>My name is Lucas, I'm 19 years old. I live in São Paulo and I am simply passionate about
+                        technology,
+                        since I was little I watched those hacker movies and I was simply fascinated and wanted to at
+                        least
+                        trying to be the same, this motivated me to enter the area of ​​technology.</p>
+                    <p>Currently my focus is on the Front-End, but I don't want to stop there. I always try to put my
+                        foot
+                        in the
+                        Back-End to gain some experience, even if little.</p>
+                    <p>I have skills with <span>HTML5, CSS3, Javacript, Jquery, Flexbox, Grid Layout e Git. I'm still
+                            firm
+                            studying to be able to improve and learn new technologies that I like and also of course,
+                            that
+                            are hot on the market!</span></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-skills">
+                <h1>skills</h1>
+                <div class="skill">
+                    <div class="skill-html">HTML</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-css">CSS</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-flexbox">Flexbox</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-grid">Grid</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-js">Javascript</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-jquery">JQuery</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-photoshop">Photoshop</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-git">Git</div>
+                </div>
+        </section>
+        <section>
+            <div class="container-projeto">
+                <div class="titulo-projeto">
+                    <h1>projetos</h1>
+                </div>
+                <div>
+                    <details class="project-details">
+                        <summary>HTML & CSS</summary>
+                        <div class="collapse">
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                        </div>
+                    </details>
+                    <details class="project-details">
+                        <summary>HTML & CSS</summary>
+                        <div class="collapse">
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                        </div>
+                    </details>
+                    <details class="project-details">
+                        <summary>HTML & CSS</summary>
+                        <div class="collapse">
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                            <a href="#">test</a>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-contact">
+                <div class="contact">
+                    <h1>Contact</h1>
+                    <p>
+                        Please contact me if you have a vacancy that fits my profile, or if you have any questions.</p>
+                </div>
 
+                <div class="form-form">
+                    <form class="form" autocomplete="off">
+                        <input type="text" name="Nome" id="nameForm" placeholder="Your name" value="" required="">
+                        <input type="text" name="Email" id="emailForm" placeholder="Your email" value="" required="">
+
+                        <select class="form-control" id="vagaForm">
+                            <option>Job model</option>
+                            <option>In person</option>
+                            <option>Home Office</option>
+                        </select>
+
+                        <select class="form-control" id="tipoVagaForm">
+                            <option>Type of Job</option>
+                            <option>Front-End</option>
+                            <option>Full Stack</option>
+                            <option>Back-End</option>
+                        </select>
+                        <textarea id="areaForm" placeholder="job description"></textarea>
+                        <input class="btn" type="submit" name="submit" value="Enviar" onclick="gotowhatsapp()">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site em desenvolvimento</p>
     </footer>
 
     <script src="./js/mobile-navbar.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
