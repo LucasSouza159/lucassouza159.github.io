@@ -5,284 +5,132 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
-body {
-  background: #0e091b;
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 1400;
+body{
+  background-color: #0e091b;
 }
-header {
-  background: #0e091b;
+.container-menu{
+  width: 100%;
+  height: 9vh;
+  background-color: #0e091b;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 79px;
-  box-shadow: 0px -5px 50px black;
+  box-shadow: 1px 15px 30px rgb(0, 0, 0);
 }
-header h1 {
+.container-menu h1{
   color: white;
   letter-spacing: 3px;
 }
-.menu ul {
+.menu ul{
   display: flex;
-  gap: 20px;
 }
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-.menu li {
+.menu li{
   list-style: none;
-  margin: 1px;
+  letter-spacing: 3px;
+  margin-left: 32px;
 }
-.menu li:last-child {
-  border-bottom: 3px solid crimson;
+.menu a{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1.5px;
+}
+.menu a:last-child{
+  margin-left: 0;
+}
+.mobile-menu{
+  cursor: pointer;
+  display: none;
+}
+.mobile-menu div{
+  width: 32px;
+  height: 2px;
+  background-color: white;
+  margin: 8px;
 }
 
-/*Descrição*/
-.container-btn {
-  width: 600px;
-}
-.btn-project,
-.btn-contact {
-  text-decoration: none;
-  padding: 10px 40px;
-  border-radius: 10px;
-  margin-right: 50px;
-}
-.btn-project {
-  background: crimson;
-  border: 2px solid crimson;
-  color: #0e091b;
-  font-weight: bold;
-}
-.btn-contact {
-  background: #0e091b;
-  border: 2px solid crimson;
-  color: crimson;
-  font-weight: bold;
-}
-.description {
-  padding: 200px 0 0 200px;
-  width: 600px;
-}
-.description h1 {
-  color: white;
-  font-weight: normal;
-  font-size: 40px;
-}
-.description span {
-  font-weight: bold;
-  font-size: 50px;
-}
-.description p {
-  margin-bottom: 60px;
-  font-size: 18px;
-  color: rgb(180, 180, 180);
-}
-.container-description {
+/*!Informações*/
+.container-info{
   display: flex;
   justify-content: space-evenly;
-}
-/*Quem sou*/
-.container-who {
-  display: flex;
-  justify-content: space-evenly;
+  align-items: center;
   margin-top: 100px;
-  height: 600px;
 }
-.who {
-  width: 500px;
-  margin-left: 80px;
+.info-desc h1{
+  color: white;
+  font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+  font-weight: normal;
 }
-.who h2 {
-  color: crimson;
-  font-size: 60px;
-  text-transform: uppercase;
+.info-desc span{
+  font-weight: bold;
 }
-.who p {
-  color: rgb(192, 192, 192);
+.info-desc p{
+  color: rgb(131, 131, 131);
+  font-weight: 400;
+  margin-top: 30px;
 }
-.who-img {
-  width: 650px;
-}
-/*Habilidades*/
-.container-skills {
-  background: #170f2c;
-  height: 600px;
-  margin: 0 auto;
-}
-.container-skills h1 {
-  width: 1000px;
-  display: flex;
-  padding-top: 50px;
-  justify-content: center;
-  text-transform: uppercase;
-  color: crimson;
-  margin: 100px auto 50px auto;
-  font-size: 60px;
-}
-.skills {
-  width: 1000px;
-  height: 300px;
-  margin: 0 auto;
+.info-btn{
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 60px;
 }
-.skill-name {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 20px 0;
-  color: crimson;
-}
-.skill-bar {
-  height: 30px;
-  background: #cacaca;
-  border-radius: 0px 10px 10px 0px;
-  width: 200px;
-  box-shadow: 0px 10px 30px rgb(0, 0, 0);
-}
-.skill-per{
-  height: 30px;
-  background: linear-gradient(to left, crimson, orange);
-  border-radius: 0px 10px 10px 0px;
-}
-.per-html{
-  width: 100%;
-}
-.per-css{
-  width: 80%;
-}
-.per-javascript{
-  width: 50%;
-}
-.per-jquery{
-  width: 70%;
-}
-.per-flexbox{
-  width: 100%;
-}
-.per-grid{
-  width: 70%;
-}
-.per-git{
-  width: 60%;
-}
-.per-photoshop{
-  width: 100%;
-}
-
-/*Projetos*/
-summary{
-  list-style: none;
-}
-.container-project {
-  width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-.title-project {
-  color: crimson;
-  font-size: 80px;
-  margin-left: 50px;
-  text-transform: uppercase;
-}
-.project-details {
-  width: 400px;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: crimson;
-  background: #0e091b;
-  margin: 30px;
-  box-shadow: 0px 10px 30px black;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.projeto-detalhes:hover {
-  width: 450px;
-  padding: 25px;
-}
-.collapse {
-  display: flex;
-  flex-direction: column;
-}
-.collapse a {
+.info-btn1, .info-btn2{
   text-decoration: none;
-  color: rgb(219, 219, 219);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 20px;
-  border-bottom: 3px solid #170f2c;
-}
-/*Formulario de contato*/
-.container-contact{
-  display: flex;
-  justify-content:space-evenly;
-  align-items: center;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  background: linear-gradient(to left, crimson, orange);
-}
-.contact{
-width: 500px;
-}
-.contact h1{
-  font-size: 60px;
-  color: crimson;
-  text-transform: uppercase;
-}
-.contact p{
-  color: white;
-  font-weight: 400;
-}
-/*Formylario*/
-.form-form{
-  width: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.form{
-  display: flex;
-  flex-direction: column;
-}
-.form input,select,textarea{
-  background: transparent;
-  border: 4px solid #ccc;
+  padding: 10px 30px;
   border-radius: 10px;
-  padding: 15px;
-  margin: 5px 0;
-  color: #0e091b;
-  font-weight: 600;
-}
-.form input::placeholder, textarea::placeholder{
-  color: #0e091b;
-}
-.form select option{
   font-weight: bold;
-  color: #0e091b;
-}
-.btn{
-  font-size: 30px;
-  transition: .3s linear;
   text-transform: uppercase;
+  margin-top: 30px;
 }
-.btn:hover{
-  transition: .3s linear;
-  background: #0e091b;
+.info-btn1{
+  background-color: crimson;
+  color: #0e091b;
+}
+.info-btn2{
+  border: 3px solid crimson;
   color: crimson;
-  border: 4px solid crimson;
-  cursor: pointer;
+}
+.info-img img{
+  width: 100%;
+  border-radius: 0 30%;
+}
+
+@media (max-width: 999px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-color: crimson;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li{
+    margin-left: 0;
+    opacity: 0;
+  }
+  .nav-list.active{
+    transform: translateX(0);
+  }
+  .mobile-menu{
+    display: block;
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 }
 
 
@@ -295,16 +143,6 @@ width: 500px;
 
 
 
-
-/*Footer*/
-footer p {
-  color: crimson;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
-  background: linear-gradient(to left, #0e091b, #170f2c);
-}
 
 /*Barra de rolagem*/
 /*Fundoque corre*/

@@ -1,207 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/b51da895f1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
     <title>Lucas Oliveira</title>
 </head>
 
 <body>
     <header>
-        <h1>Lucas Oliveira</h1>
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#who">Who am I?</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container-menu">
+            <h1>Lucas Oliveira</h1>
+            <nav class="menu">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="container-description" id="home">
-            <div class="description">
-                <h1>
-                    Hello, my name is
-                    <span> Lucas Oliveira</span>
-                </h1>
-                <p>Full Stack Developer</p>
-                <div class="container-btn">
-                    <a class="btn-project" href="#project">Projects</a>
-                    <a class="btn-contact" href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="imagem-eu">
-                <img src="./images/eu.png" alt="eu">
-            </div>
-        </section>
-
-        <section class="container-who" id="who">
-            <div class="who-img">
-                <img src="./images/mesa.svg" alt="">
-            </div>
-            <div class="who">
-                <h2>Who am I?</h2>
-                <p>My name is Lucas, I'm 19 years old. I live in São Paulo and I am simply passionate about technology,
-                    since I was little I watched those hacker movies and I was simply fascinated and wanted to at least
-                    trying to be the same, this motivated me to enter the area of ​​technology.</p>
-                <p>Currently my focus is on the Front-End, but I don't want to stop there. I always try to put my foot
-                    in the
-                    Back-End to gain some experience, even if little.</p>
-                <p>I have skills with <span>HTML5, CSS3, Javacript, Jquery, Flexbox, Grid Layout e Git. I'm still firm
-                        studying to be able to improve and learn new technologies that I like and also of course, that
-                        are hot on the market!</span></p>
-            </div>
-        </section>
-
-
-        <section class="container-skills" id="skills">
-            <h1>Skills</h1>
-            <div class="skills">
-                <div class="skill-divide">
-                    <div class="skill">
-                        <div class="skill-name">HTML5</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-html" per="100"></div>
-                        </div>
+        <section>
+            <div class="container-info">
+                <div class="info-desc">
+                    <h1>Olá, me chamo <br><span>Lucas Oliveira</span></h1>
+                    <p>Full Stack Developer</p>
+                    <div class="info-btn">
+                        <a class="info-btn1" href="#">Projetos</a>
+                        <a class="info-btn2" href="#">Contato</a>
                     </div>
                 </div>
-                <div class="skill-divide">
-                    <div class="skill">
-                        <div class="skill-name">CSS3</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-css" per="80"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-divide">
-                    <div class="skill anime">
-                        <div class="skill-name">javascript</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-javascript" per="50"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-divide">
-                    <div class="skill">
-                        <div class="skill-name">Jquery</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-jquery" per="75"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-divide">
-                    <div class="skill">
-                        <div class="skill-name">Flexbox</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-flexbox" per="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-divide">
-                    <div class="skill">
-                        <div class="skill-name">Grid Layout</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-grid" per="70"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-divide">
-                    <div class="skill">
-                        <div class="skill-name">Git</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-git" per="60"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-divide">
-                    <div class="skill">
-                        <div class="skill-name">Photoshop</div>
-                        <div class="skill-bar">
-                            <div class="skill-per per-photoshop" per="100"></div>
-                        </div>
-                    </div>
+                <div class="info-img">
+                    <img src="./images/eu.jpg" alt="">
                 </div>
             </div>
         </section>
-
-        <section class="container-project" id="project">
-            <div>
-                <details class="project-details">
-                    <summary>HTML & CSS</summary>
-                    <div class="collapse">
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                    </div>
-                </details>
-
-                <details class="project-details">
-                    <summary>Javascript</summary>
-                    <div class="collapse">
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                    </div>
-                </details>
-
-                <details class="project-details">
-                    <summary>Front-End</summary>
-                    <div class="collapse">
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                        <a href="#">test</a>
-                    </div>
-                </details>
-            </div>
-            <div class="title-project">
-                <h1>Projects</h1>
-            </div>
-        </section>
-
-        <section class="container-contact" id="contact">
-            <div class="contact">
-                <h1>Contact</h1>
-                <p>
-                    Please contact me if you have a vacancy that fits my profile, or if you have any questions.</p>
-            </div>
-
-            <div class="form-form">
-                <form class="form" autocomplete="off">
-                    <input type="text" name="Nome" id="nameForm" placeholder="Your name" value="" required="">
-                    <input type="text" name="Email" id="emailForm" placeholder="Your email" value="" required="">
-
-                    <select class="form-control" id="vagaForm">
-                        <option>Job model</option>
-                        <option>In person</option>
-                        <option>Home Office</option>
-                    </select>
-
-                    <select class="form-control" id="tipoVagaForm">
-                        <option>Type of Job</option>
-                        <option>Front-End</option>
-                        <option>Full Stack</option>
-                        <option>Back-End</option>
-                    </select>
-                    <textarea id="areaForm" placeholder="job description"></textarea>
-                    <input class="btn" type="submit" name="submit" value="Enviar" onclick="gotowhatsapp()">
-                </form>
-            </div>
-        </section>
-        <footer>
-            <p>Website under development.</p>
-        </footer>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
     </main>
-    <script src="./js/app.js"></script>
+    <footer>
+
+    </footer>
+
+    <script src="./js/mobile-navbar.js"></script>
 </body>
 
 </html>
