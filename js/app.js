@@ -7,7 +7,7 @@ function gotowhatsapp() {
     var areaForm = document.getElementById("areaForm").value;
 
 
-    var url = "https://wa.me/+5511985307427?text="
+    var url = "https://wa.me/+5511990154298?text="
         + "Name: " + nameForm + "%0a"
         + "Email: " + emailForm + "%0a"
         + "Job model: " + vagaForm + "%0a"
