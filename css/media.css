@@ -93,7 +93,7 @@
   .info-img img{
     border-radius: 10px;
     box-shadow: 0px 15px 30px black;
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
   /*!quem sou*/
   .container-who{
@@ -103,7 +103,7 @@
     display: none;
   }
   .who{
-      width: 400px;
+      width: 25rem;
   }
   /*Habilidades*/
   .container-skills{
@@ -131,7 +131,7 @@
   /*Formulario*/
   .form-form{
     width: 80%;
-    margin: 50px 30px;
+    margin: 3.125rem 1.875rem;
   }
 }
 @media (max-width:450px){
@@ -145,13 +145,13 @@
       }
       .who{
         width: 95%;
-        margin: 30px;
+        margin: 1.875rem;
       }
       .who h2{
         font-size: 2rem;
       }
       .who p{
-        font-size: 14px;
+        font-size: 0.875rem;
       }
       /*Habilidades*/
       .container-skills{
@@ -159,14 +159,14 @@
       }
       .container-skills h1{
         font-size: 2rem;
-        margin-bottom: 5px;
+        margin-bottom: 0.313rem;
       }
       .skill{
         width: 28%;
         height: 30px;
         background: #0e091b;
         border-radius: 20px;
-        margin: 50px 30px 0 30px;
+        margin: 3.125rem 1.875rem 0 1.875rem;
       
       }
 }
@@ -178,13 +178,13 @@
       }
       .who{
         width: 75%;
-        margin: 30px;
+        margin: 1.875rem;
       }
       .who h2{
         font-size: 2rem;
       }
       .who p{
-        font-size: 14px;
+        font-size: 0.875rem;
       } 
 }
 @media (max-width: 375px){
@@ -199,7 +199,7 @@
       .info-img img{
         border-radius: 10px;
         box-shadow: 0px 15px 30px black;
-        margin-top: 30px;
+        margin-top: 1.875rem;
       }
       /*!quem sou*/
       .container-who{
@@ -208,13 +208,13 @@
       }
       .who{
         width: 75%;
-        margin: 30px;
+        margin: 1.875rem;
       }
       .who h2{
         font-size: 2rem;
       }
       .who p{
-        font-size: 14px;
+        font-size: 0.875rem;
       }
       /*Habilidades*/
       .container-skills{
@@ -222,14 +222,14 @@
       }
       .container-skills h1{
         font-size: 2rem;
-        margin-bottom: 5px;
+        margin-bottom: 0.313rem;
       }
       .skill{
         width: 27%;
         height: 30px;
         background: #0e091b;
         border-radius: 20px;
-        margin: 50px 30px 0 30px;
+        margin: 3.125rem 1.875rem 0 1.875rem;
       
       }
       .skill-html, .skill-css, .skill-flexbox, .skill-grid, .skill-js, .skill-jquery, .skill-photoshop, .skill-git{
@@ -256,7 +256,7 @@
       /*Formulario*/
       .form-form{
         width: 80%;
-        margin: 50px 0;
+        margin: 3.125rem 0;
       }
       /*Footer*/
       footer p{

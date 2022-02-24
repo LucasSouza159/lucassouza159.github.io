@@ -20,22 +20,23 @@
                 <span id="hamburger"></span>
             </button>
             <ul id="menu" role="menu">
-                <li><a href="/">Sobre</a></li>
-                <li><a href="/">Produtos</a></li>
-                <li><a href="/">Portfólio</a></li>
-                <li><a href="/">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#who">Who am i?</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <div class="container-info">
+            <div class="container-info" id="home">
                 <div class="info-desc">
-                    <h1>Olá, me chamo <br><span>Lucas Oliveira</span></h1>
+                    <h1>Hello, i'm <br><span>Lucas Oliveira</span></h1>
                     <p>Full Stack Developer</p>
                     <div class="info-btn">
-                        <a class="info-btn1" href="#">Projetos</a>
-                        <a class="info-btn2" href="#">Contato</a>
+                        <a class="info-btn1" href="#projects">Projects</a>
+                        <a class="info-btn2" href="#contact">Contact</a>
                     </div>
                 </div>
                 <div class="info-img">
@@ -44,7 +45,7 @@
             </div>
         </section>
         <section>
-            <div class="container-who">
+            <div class="container-who" id="who">
                 <div class="who-img">
                     <img src="./images/mesa.png" alt="">
                 </div>
@@ -68,7 +69,7 @@
             </div>
         </section>
         <section>
-            <div class="container-skills">
+            <div class="container-skills" id="skills">
                 <h1>skills</h1>
                 <div class="skill">
                     <div class="skill-html">HTML</div>
@@ -96,9 +97,9 @@
                 </div>
         </section>
         <section>
-            <div class="container-projeto">
+            <div class="container-projeto" id="projects">
                 <div class="titulo-projeto">
-                    <h1>projetos</h1>
+                    <h1>projects</h1>
                 </div>
                 <div>
                     <details class="project-details">
@@ -132,7 +133,7 @@
             </div>
         </section>
         <section>
-            <div class="container-contact">
+            <div class="container-contact" id="contact">
                 <div class="contact">
                     <h1>Contact</h1>
                     <p>
@@ -157,7 +158,7 @@
                             <option>Back-End</option>
                         </select>
                         <textarea id="areaForm" placeholder="job description"></textarea>
-                        <input class="btn" type="submit" name="submit" value="Enviar" onclick="gotowhatsapp()">
+                        <input class="btn" type="submit" name="submit" value="send" onclick="gotowhatsapp()">
                     </form>
                 </div>
             </div>
@@ -165,7 +166,7 @@
     </main>
 
     <footer>
-        <p>Site em desenvolvimento</p>
+        <p>under development landing page</p>
     </footer>
 
     <script src="./js/mobile-navbar.js"></script>
