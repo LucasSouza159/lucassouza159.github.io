@@ -85,7 +85,7 @@
     text-align: center;
   }
   }
-  @media (max-width: 500px){
+@media (max-width: 500px){
    /*!Informações*/
     .container-info{
     flex-direction: column;
@@ -138,6 +138,21 @@
     #logo {
         font-size: 2rem;
       }
+       /*!quem sou*/
+       .container-who{
+        width: 100%;
+        margin: 0;
+      }
+      .who{
+        width: 95%;
+        margin: 30px;
+      }
+      .who h2{
+        font-size: 2rem;
+      }
+      .who p{
+        font-size: 14px;
+      }
       /*Habilidades*/
       .container-skills{
         height: 450px;
@@ -155,7 +170,24 @@
       
       }
 }
-  @media (max-width: 375px){
+@media (max-width: 390px){
+    /*!quem sou*/
+    .container-who{
+        width: 100%;
+        margin: 0;
+      }
+      .who{
+        width: 75%;
+        margin: 30px;
+      }
+      .who h2{
+        font-size: 2rem;
+      }
+      .who p{
+        font-size: 14px;
+      } 
+}
+@media (max-width: 375px){
     #logo {
         font-size: 2rem;
       }
@@ -175,7 +207,7 @@
         margin: 0;
       }
       .who{
-        width: 80%;
+        width: 75%;
         margin: 30px;
       }
       .who h2{
@@ -227,4 +259,4 @@
       footer p{
         font-size: 1rem;
       }      
-  }
+}
