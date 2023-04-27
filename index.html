@@ -1,176 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/dist/output.css" rel="stylesheet" />
+    <!-- Fonte awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script src="https://kit.fontawesome.com/b51da895f1.js" crossorigin="anonymous"></script>
-    <title>Lucas Oliveira</title>
-</head>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-back relative">
+    <header class="bg-back py-4 w-full shadow-lg fixed z-50 -mt-8 md:-mt-16" id="header">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 font-dm bg-back"
+      >
+        <div class="text-4xl font-bold text-white">Port.</div>
+        <button class="text-2xl md:hidden text-laranja" id="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
-<body>
-    <header id="header">
-        <a id="logo" href="">Lucas Oliveira</a>
-        <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">
-                <span id="hamburger"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#who">Who am i?</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav
+          id="nav"
+          class="menu fixed top-16 bottom-0 bg-back -right-full w-full md:w-auto md:static transition-all duration-500"
+        >
+          <ul class="md:flex">
+            <li class="md:border-none border-b-2 border-laranja">
+              <a
+                href="#sobre"
+                class="block p-3 text-lg text-white md:hover:border-b-2 md:hover:border-laranja"
+                >Sobre</a
+              >
+            </li>
+            <li class="md:border-none border-b-2 border-laranja">
+              <a
+                href="#oquefaco"
+                class="block p-3 text-lg text-white md:hover:border-b-2 md:hover:border-laranja"
+                >O que faço</a
+              >
+            </li>
+            <li class="md:border-none border-b-2 border-laranja">
+              <a
+                href="#habilidades"
+                class="block p-3 text-lg text-white md:hover:border-b-2 md:hover:border-laranja"
+                >Habilidades</a
+              >
+            </li>
+            <li class="md:border-none border-b-2 border-laranja">
+              <a
+                href="#projetos"
+                class="block p-3 text-lg text-white md:hover:border-b-2 md:hover:border-laranja"
+                >Projetos</a
+              >
+            </li>
+            <li class="md:border-none border-b-2 border-laranja">
+              <a
+                href="#contato"
+                class="block p-3 text-lg text-white md:hover:border-b-2 md:hover:border-laranja"
+                >Contato</a
+              >
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
-    <main>
-        <section>
-            <div class="container-info" id="home">
-                <div class="info-desc">
-                    <h1>Hello, i'm <br><span>Lucas Oliveira</span></h1>
-                    <p>Full Stack Developer</p>
-                    <div class="info-btn">
-                        <a class="info-btn1" href="https://lucassouza159.github.io/projectHub">Projects</a>
-                        <a class="info-btn2" href="#contact">Contact</a>
-                    </div>
-                </div>
-                <div class="info-img">
-                    <img src="./images/eu.jpg" alt="">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container-who" id="who">
-                <div class="who-img">
-                    <img src="./images/mesa.png" alt="">
-                </div>
-                <div class="who">
-                    <h2>Who am I?</h2>
-                    <p>My name is Lucas, I'm 19 years old. I live in São Paulo and I am simply passionate about
-                        technology,
-                        since I was little I watched those hacker movies and I was simply fascinated and wanted to at
-                        least
-                        trying to be the same, this motivated me to enter the area of ​​technology.</p>
-                    <p>Currently my focus is on the Front-End, but I don't want to stop there. I always try to put my
-                        foot
-                        in the
-                        Back-End to gain some experience, even if little.</p>
-                    <p>I have skills with <span>HTML5, CSS3, Javacript, Jquery, Flexbox, Grid Layout e Git. I'm still
-                            firm
-                            studying to be able to improve and learn new technologies that I like and also of course,
-                            that
-                            are hot on the market!</span></p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container-skills" id="skills">
-                <h1>skills</h1>
-                <div class="skill">
-                    <div class="skill-html">HTML</div>
-                </div>
-                <div class="skill">
-                    <div class="skill-css">CSS</div>
-                </div>
-                <div class="skill">
-                    <div class="skill-flexbox">Flexbox</div>
-                </div>
-                <div class="skill">
-                    <div class="skill-grid">Grid</div>
-                </div>
-                <div class="skill">
-                    <div class="skill-js">Javascript</div>
-                </div>
-                <div class="skill">
-                    <div class="skill-jquery">JQuery</div>
-                </div>
-                <div class="skill">
-                    <div class="skill-photoshop">Photoshop</div>
-                </div>
-                <div class="skill">
-                    <div class="skill-git">Git</div>
-                </div>
-        </section>
-        <section>
-            <div class="container-projeto" id="projects">
-                <div class="titulo-projeto">
-                    <h1>projects</h1>
-                </div>
-                <div>
-                    <details class="project-details">
-                        <summary>HTML & CSS</summary>
-                        <div class="collapse">
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                        </div>
-                    </details>
-                    <details class="project-details">
-                        <summary>HTML & CSS</summary>
-                        <div class="collapse">
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                        </div>
-                    </details>
-                    <details class="project-details">
-                        <summary>HTML & CSS</summary>
-                        <div class="collapse">
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                            <a href="#">test</a>
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container-contact" id="contact">
-                <div class="contact">
-                    <h1>Contact</h1>
-                    <p>
-                        Please contact me if you have a job that fits my profile, or if you have any questions.</p>
-                </div>
 
-                <div class="form-form">
-                    <form class="form" autocomplete="off">
-                        <input type="text" name="Nome" id="nameForm" placeholder="Your name" value="" required="">
-                        <input type="text" name="Email" id="emailForm" placeholder="Your email" value="" required="">
+    <!-- Voltar ao topo -->
+    <div class="voltar fixed right-10 top-voltar z-50 invisible transition-all duration-300">
+      <div class="bg-laranja rounded-full w-14 h-14 flex items-center justify-center">
+        <a href="#header" class="p-5" id="voltarTopo"><i class="fa-solid fa-arrow-up text-2xl text-card"></i></a>
+      </div>
+    </div>
 
-                        <select class="form-control" id="vagaForm">
-                            <option>Job model</option>
-                            <option>In person</option>
-                            <option>Home Office</option>
-                        </select>
+    <main class="container mx-auto px-4">
+      <!-- Principal (Imagem e botões) -->
+      <div
+        class="flex flex-col md:flex-row justify-around items-center mt-7 md:mt-14"
+      >
+        <div class="order-2 md:order-1">
+          <h1 class="font-bold text-white text-3xl md:text-4xl">
+            Olá, eu sou<br />
+            <span class="text-4xl md:text-6xl">Lucas Oliveira</span>
+          </h1>
+          <p class="text-dev mt-5">Desenvolvedor Frontend e Web design</p>
+          <div class="mt-5 flex items-center gap-4 box-border">
+            <a href="#" class="bg-laranja px-4 py-2 text-white">Download CV</a>
+            <a href="https://github.com/LucasSouza159?tab=repositories" target="_blank" class="border-2 border-dev px-8 py-2 text-white"
+              >Veja mais</a
+            >
+          </div>
+        </div>
+        <div class="w-96 md:w-img md:order-2">
+          <img
+            src="./src/img/eu.png"
+            alt="programdor lucas oliveira, feliz com a vida"
+            class=""
+          />
+        </div>
+      </div>
 
-                        <select class="form-control" id="tipoVagaForm">
-                            <option>Type of Job</option>
-                            <option>Front-End</option>
-                            <option>Full Stack</option>
-                            <option>Back-End</option>
-                        </select>
-                        <textarea id="areaForm" placeholder="job description"></textarea>
-                        <input class="btn" type="submit" name="submit" value="send" onclick="gotowhatsapp()">
-                    </form>
-                </div>
+      <!-- Sobre -->
+      <div class="container mx-auto mt-14" id="sobre">
+        <div class="flex flex-col items-center">
+          <h2 class="text-center font-bold text-5xl md:text-4xl text-white mb-10">
+            Sobre mim
+          </h2>
+          <p class="text-dev md:w-1/2 text-center">
+            Olá, me chamo Lucas, tenho 21 anos e amo tecnologia. Atualmente estou
+            estudando<strong
+              > Tec. em Informática para Internet no Senac São Miguel</strong
+            >, uma ótima instituição de esino. Possuo sou uma pessoa comunicativa,
+            lider, um excelente gestor e inovador, estou sempre a disposição de
+            ajudar aqueles que precisam de ajuda, afinal como disse Albert
+            Einstein: "Se você não consegue explicar algo de modo simples é porque
+            não entendeu bem"; E de fato, é uma verdade, por este motivo eu gosto
+            de ajudar as pessoas, isso fortalece meu conhecimento, pois na maioria
+            das vezes eu preciso pesquisar e econtrar uma resposta adequada.
+          </p>
+        </div>
+
+        <div class="container mx-auto flex justify-around mt-7">
+          <div class="text-white text-center">
+            <div class="inline-block p-3 bg-card rounded-full mb-2">
+              <i class="fa-solid fa-envelope p-2 text-laranja text-2xl"></i>
             </div>
-        </section>
+            <h2 class="font-bold">E-mail</h2>
+            <a
+              href="mailto:lucassouzaprofissional16@gmail.com"
+              class="hover:text-larahover:text-laranja duration-200nja transition-all duration-200"
+              >Contatar agora</a
+            >
+          </div>
+          <div class="text-white text-center">
+            <div class="inline-block p-3 bg-card rounded-full mb-2">
+              <i class="fa-brands fa-linkedin p-2 text-laranja text-2xl"></i>
+            </div>
+            <h2 class="font-bold">Linkedin</h2>
+            <a
+              href="https://www.linkedin.com/in/lucas-oliveira-a58b13230/"
+              class="hover:text-laranja transition-all duration-200"
+              >Acessar</a
+            >
+          </div>
+          <div class="text-white text-center">
+            <div class="inline-block p-3 bg-card rounded-full mb-2">
+              <i class="fa-solid fa-phone p-2 text-laranja text-2xl"></i>
+            </div>
+            <h2 class="font-bold">Telefone</h2>
+            <a
+              href="tel:+5511990154298"
+              class="hover:text-laranja transition-all duration-200"
+              >Ligar agora</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- O que eu faço -->
+      <div class="container mx-auto mt-14" id="oquefaco">
+        <h2 class="text-center font-bold text-4xl text-white mb-10">
+          O que eu faço
+        </h2>
+        <div class="flex justify-center gap-10 flex-wrap">
+          <div class="bg-card w-72 px-10 py-5">
+            <i class="fa-brands fa-connectdevelop text-laranja text-5xl"></i>
+            <p class="text-dev font-medium text-3xl">
+              Desenvolvedor de Software
+            </p>
+          </div>
+          <div class="bg-card w-72 px-10 py-5">
+            <i class="fa-brands fa-dev text-laranja text-5xl"></i>
+            <p class="text-dev font-medium text-3xl">Desenvolvedor Web</p>
+          </div>
+          <div class="bg-card w-72 px-10 py-5">
+            <i class="fa-solid fa-cube text-laranja text-5xl"></i>
+            <p class="text-dev font-medium text-3xl">Web<br />Design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minhas habilidades -->
+      <div class="container mx-auto mt-14" id="habilidades">
+        <h2 class="text-center font-bold text-4xl text-white mb-10">
+          Minhas Habilidades
+        </h2>
+
+        <div
+          class="flex justify-center items-center flex-wrap gap-8 md:gap-28 bg-card px-5 py-5 md:px-10 md:py-10"
+        >
+          <div class="flex flex-col items-center">
+            <p class="text-dev text-4xl md:text-6xl font-bold">100%</p>
+            <p class="text-laranja text-sm md:text-2xl font-bold">HTML</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="text-dev text-4xl md:text-6xl font-bold">80%</p>
+            <p class="text-laranja text-sm md:text-2xl font-bold">CSS</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="text-dev text-4xl md:text-6xl font-bold">70%</p>
+            <p class="text-laranja text-sm md:text-2xl font-bold">JAVASCRIPT</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="text-dev text-4xl md:text-6xl font-bold">30%</p>
+            <p class="text-laranja text-sm md:text-2xl font-bold">NODE</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="text-dev text-4xl md:text-6xl font-bold">50%</p>
+            <p class="text-laranja text-sm md:text-2xl font-bold">REACT</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="text-dev text-4xl md:text-6xl font-bold">100%</p>
+            <p class="text-laranja text-sm md:text-2xl font-bold">Tailwind</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projetos -->
+      <div class="container mx-auto mt-14 mb-14" id="projetos">
+        <h2 class="text-center font-bold text-4xl text-white mb-10">
+          Projetos
+        </h2>
+        <divportlucas.rf.gd
+          class="blurActive flex items-center flex-wrap px-5 py-10 md:px-10 md:py-12 h-full"
+        >
+          <div class="md:w-1/2">
+            <h1
+              class="font-bold text-white text-2xl md:text-4xl md:leading-relaxed mb-5"
+            >
+              Meu primeiro
+              <span class="text-laranja">portifolio</span>
+              desenvolvido
+            </h1>
+            <p class="text-dev mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur quos hic cumque, laborum animi dolore odit architecto
+              minus autem magni, vel dolorem laudantium cupiditate adipisci
+              quaerat reiciendis voluptatum molestiae unde.
+            </p>
+            <div class="text-dev flex gap-5 font-medium mb-5">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JS</p>
+            </div>
+            <a href="#" class="bg-laranja px-20 py-2 text-white rounded-sm"
+              >DEMO</a
+            >
+          </div>
+          <div class="md:w-1/2 mt-12">
+            <img src="./src/img/proj.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário de contato -->
+      <div class="container mx-auto mt-14 mb-14 flex flex-col items-center" id="contato">
+        <h2 class="text-center font-bold text-4xl text-white mb-10">
+          Entre em contato
+        </h2>
+        <form action="https://formsubmit.co/lucassouzaprofissional16@gmail.com" method="POST" class="flex flex-col gap-5 text-laranja md:w-1/2 w-80">
+          <input type="email" placeholder="Digite o seu E-mail" name="email" required class="bg-transparent border-2 border-dev focus:border-laranja outline-none px-4 py-2 transition-all duration-500">
+          <textarea placeholder="Descreva a mensagem a ser enviada..." name="message" class="bg-transparent border-2 border-dev focus:border-laranja outline-none px-4 py-2 h-32 transition-all duration-500"></textarea>
+          <input type="submit" class="bg-laranja px-4 py-2 text-white font-bold cursor-pointer hover:bg-orange-700 transition-all duration-500 rounded-md" value="Enviar agora">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_autoresponse" value="Olá, tudo bem? Obrigado por entrar em contato comigo, logo estarei respondendo este e-mail!!">
+          <input type="hidden" name="_next" value="https://lucassouza159.github.io/">
+          <input
+            type="hidden"
+            class=""
+            placeholder="Assunto"
+            name="_subject"
+            value="Novo email do portifolio woooo!!!"
+          />
+        </form>
+      </div>
     </main>
 
-    <footer>
-        <p>under development landing page</p>
+    <footer class="container mx-auto px-4 text-center text-dev mb-16">
+      &copy; Lucas Oliveira
     </footer>
 
-    <script src="./js/mobile-navbar.js"></script>
-    <script src="./js/app.js"></script>
-</body>
-
+    <script src="./src/js/btnMobile.js"></script>
+    <script src="./src/js/eventos.js"></script>
+  </body>
 </html>
